@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1180px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(0, 0, 0) !important;
+}
+.section {
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
+.section__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(41, 38, 38);
+  height: 80px;
+}

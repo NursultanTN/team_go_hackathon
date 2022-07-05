@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "title": "Lexus",
+      "price": 5000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "id": 4,
+      "info": "",
+      "brand": "Lexus"
+    },
+    {
+      "title": "volvos",
+      "price": 10000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 5,
+      "brand": "BMW G20"
+    },
+    {
+      "brand": "volvo",
+      "price": 20000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 7
+    },
+    {
+      "brand": "BMW G20",
+      "price": 4567,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 8
+    },
+    {
+      "brand": "BMW G20",
+      "price": 9000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 9
+    },
+    {
+      "brand": "BMW G20",
+      "price": 40000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 10
+    },
+    {
+      "brand": "BMW G20",
+      "price": 50000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 11
+    },
+    {
+      "brand": "BMW G20",
+      "price": 60000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 12
+    },
+    {
+      "brand": "BMW G20",
+      "price": 70000,
+      "image": "https://www.lexusindia.co.in/content/dam/lexus-v3-blueprint/homepage/personalised-models/es/my22/lexus-es-300h-homepage-tile-m.jpg",
+      "info": "",
+      "id": 13
+    },
+    {
+      "brand": "BMW G20",
+      "price": 80000,
+      "image": "https://www.lexusindia.co.in/content/dam/lexus-v3-blueprint/homepage/personalised-models/es/my22/lexus-es-300h-homepage-tile-m.jpg",
+      "info": "",
+      "id": 14
+    },
+    {
+      "brand": "BMW G20",
+      "price": 90000,
+      "image": "https://www.lexusindia.co.in/content/dam/lexus-v3-blueprint/homepage/personalised-models/es/my22/lexus-es-300h-homepage-tile-m.jpg",
+      "info": "",
+      "id": 15
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "price": 567890,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 16
+    },
+    {
+      "brand": "alfa romeo",
+      "price": 55000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 17
+    },
+    {
+      "brand": "toyota",
+      "price": 100000,
+      "image": "https://cdn.euroncap.com/media/40810/mercedes-benz-a-class-359-235.201810081607371039.jpg?mode=crop&width=359&height=235",
+      "info": "",
+      "id": 18
+    }
+  ]
+}
