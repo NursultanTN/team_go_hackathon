@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import Header from "./components/Header/Header";
 import AddProduct from "./components/AddProduct/AddProduct";
 import Users from "./components/Users/Users";
@@ -23,16 +23,46 @@ const App = () => {
   const [products, setProducts] = useState([]);
   const [oneProduct, setOneProduct] = useState(null);
 
+  const INIT_STATE = {
+    products: [],
+    oneProduct: null,
+    pages: 0,
+  };
+  function reducer(state = INIT_STATE, action) {
+    switch (action.type) {
+      case "GET_PRODUCTS":
+        return {
+          ...state,
+          products: action.payload.data,
+          pages: Math.ceil(action.payload.headers["x-total-count"] / 4),
+        };
+      case "GET_ONE":
+        return { ...state, oneProduct: action.payload };
+      default:
+        return state;
+    }
+  }
+  const [state, dispatch] = useReducer(reducer, INIT_STATE);
+
   // ! Create - POST
-  const API = "http://localhost:8000/products";
+  const API = "http://localhost:8001/products";
+
   async function addProduct(newProduct) {
     await axios.post(API, newProduct);
+
     getProducts();
   }
+
   // ! Read _GET
   async function getProducts() {
     let res = await axios(API + window.location.search);
-    setProducts(res.data);
+    // setProducts(res.data);
+    // getProducts();
+    dispatch({
+      type: "GET_PRODUCTS",
+      payload: res,
+    });
+    // console.log(res);
     //  console.log('from app.js', res);
   }
   // console.log(products);
@@ -67,9 +97,11 @@ const App = () => {
             path="/"
             element={
               <List
+                pages={state.pages}
                 deleteProduct={deleteProduct}
-                products={products}
+                products={state.products}
                 getProducts={getProducts}
+                addProduct={addProduct}
               />
             }
           />
