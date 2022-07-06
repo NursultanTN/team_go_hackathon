@@ -57,7 +57,7 @@ const App = () => {
   async function getProducts() {
     let res = await axios(API + window.location.search);
     // setProducts(res.data);
-    // getProducts();
+
     dispatch({
       type: "GET_PRODUCTS",
       payload: res,

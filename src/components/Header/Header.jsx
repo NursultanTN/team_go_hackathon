@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 
 const pages = ["Brands", "Add Product"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -20,6 +20,7 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const Header = () => {
   const location = useLocation();
   // console.log(location); //object
+  const navigate = useNavigate();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -43,6 +44,7 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img
+            onClick={() => navigate("/")}
             style={{ width: 150, height: 100 }}
             src="https://img.freepik.com/free-photo/shiny-alloy-wheels-new-design-in-the-shape-of-a-star-front-view-on-a-black-background_114160-762.jpg"
             alt=""
